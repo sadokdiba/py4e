@@ -1,14 +1,18 @@
 hrs = input("Enter Hours: ")
-hf = float(hrs)
 r = input("Enter Rate: ")
-rf= float(r)
+try:
+    hf = float(hrs)
+    rf= float(r)
+except:
+    print('Entry not a numerical value')
+    quit()
 a40 = float(40)
-if hf <= a40:
-    payl40 = hf * rf
-    print(payl40)
-else:
+if hf > a40:
     payg40 = (a40 * rf) + ((hf-a40) * rf * 1.5)
     print (payg40)
+else:
+    payl40 = hf * rf
+    print(payl40)
 
 # High-level calculation of pay
 # def calculate_pay(hours, rate):
