@@ -1,0 +1,43 @@
+1. Setup Git and Initialize a Repository
+Navigate to your folder:
+
+Command
+cd /path/to/your/folder
+Initialize a Git repository:
+
+Command
+git init
+Add your GitHub repository as a remote:
+
+Command
+git remote add origin https://github.com/your-username/your-repo.git
+Replace your-username and your-repo with your GitHub details.
+
+2. Push Initial Folder Contents
+Stage all files:
+Command
+git add .
+
+Commit the changes:
+Command
+git commit -m "Initial commit"
+
+Push to GitHub:
+Command
+git branch -M main
+git push -u origin main
+
+3. Progressive Updates (Adding Single Files/Folders)
+To progressively push new files or folders:
+
+Add the file or folder:
+command
+git add path/to/file_or_folder
+
+Commit the changes:
+command
+git commit -m "Add file_or_folder"
+
+Push to GitHub:
+command
+git push
