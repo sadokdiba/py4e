@@ -2,7 +2,7 @@ tot = 0.0
 count = 0
 while True:
     vent = input('Enter number: ')
-    if vent in ['done','Done']:
+    if vent == 'done':
         break
     elif vent == 'exit':
         print('Program ended')

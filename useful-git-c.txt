@@ -43,7 +43,7 @@ command
 git push
 
 #################
-Push into a specifi branch
+Push into a specific branch
 
 Commands
 # Step 1: Switch or create a branch

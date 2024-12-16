@@ -26,7 +26,8 @@ def main():
     except ValueError: 
         print("Entry not a numerical value")
 
-print(main.__doc__) #captures docstring inside the "main" funtion
+print(get_grade.__doc__) #prints docstring inside the "get_grade" function
+print(main.__doc__) #prints docstring inside the "main" function
 
 if __name__ == "__main__": #checks if the code is not used as a module elswhere if true runs main()
     main()
