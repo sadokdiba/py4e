@@ -1,17 +1,17 @@
 tot = 0.0
 count = 0
 while True:
-    vent = input('Enter number: ')
-    if vent == 'done':
+    value_entered = input('Enter number: ')
+    if value_entered == 'done':
         break
-    elif vent == 'exit':
+    elif value_entered == 'exit':
         print('Program ended')
         quit()
     try:
-        fvent = float(vent)
+        f_value_entered = float(value_entered)
     except:
         print('Invalid value')
         continue
     count += 1
-    tot += fvent
+    tot += f_value_entered
 print(tot,count,tot/count)
